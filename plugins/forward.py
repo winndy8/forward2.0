@@ -86,13 +86,13 @@ async def forward(bot, message):
                             caption=caption,
                             message_id=message_id
                             )
-                    await asyncio.sleep(0.5)
+                    await asyncio.sleep(1)
                     try:
-                        status.add(1)
+                        status.add(0)
                     except:
                         pass
                     try:
-                        status.remove(1)
+                        status.remove(0)
                     except:
                         pass
                 except FloodWait as e:
@@ -111,7 +111,7 @@ async def forward(bot, message):
                             caption=caption,
                             message_id=message_id
                             )
-                    await asyncio.sleep(0.5)
+                    await asyncio.sleep(1)
 
 
                 except Exception as e:
@@ -228,11 +228,11 @@ async def forward(bot, message):
                                     'file_type': file_type
                                     })
                                 try:
-                                    status.add(1)
+                                    status.add(0)
                                 except:
                                     pass
                                 try:
-                                    status.remove(2)
+                                    status.remove(0)
                                 except:
                                     pass
                                 
@@ -241,7 +241,7 @@ async def forward(bot, message):
                                 acount -= 1
                                 bcount -= 1
                                 MessageCount += 1
-                                mainsleep=random.randint(0.5, 0.5)
+                                mainsleep=random.randint(1, 1)
                                 try:
                                     datetime_ist = datetime.now(IST)
                                     ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
@@ -257,11 +257,11 @@ async def forward(bot, message):
                                 await asyncio.sleep(mainsleep)
                             else:
                                 try:
-                                    status.add(1)
+                                    status.add(0)
                                 except:
                                     pass
                                 try:
-                                    status.remove(1)
+                                    status.remove(0)
                                 except:
                                     pass
                                 csleep=random.randint(250, 500)
@@ -280,11 +280,11 @@ async def forward(bot, message):
                                 await m.edit(f"Starting after {csleep}")
                         else:
                             try:
-                                status.add(1)
+                                status.add(0)
                             except:
                                 pass
                             try:
-                                status.remove(1)
+                                status.remove(0)
                             except:
                                 pass
                             bsl=random.randint(1000, 1200)
@@ -303,11 +303,11 @@ async def forward(bot, message):
                             await m.edit(f"Starting after {bsl}")
                     else:
                         try:
-                            status.add(1)
+                            status.add(0)
                         except:
                             pass
                         try:
-                            status.remove(1)
+                            status.remove(0)
                         except:
                             pass
                         asl=random.randint(1500, 2000)
@@ -325,11 +325,11 @@ async def forward(bot, message):
                         await m.edit(f"Starting after {asl}")
                 else:
                     try:
-                        status.add(1)
+                        status.add(0)
                     except:
                         pass
                     try:
-                        status.remove(1)
+                        status.remove(0)
                     except:
                         pass
                     msl=random.randint(2000, 3000)
