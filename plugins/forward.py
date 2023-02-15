@@ -86,7 +86,7 @@ async def forward(bot, message):
                             caption=caption,
                             message_id=message_id
                             )
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(0.5)
                     try:
                         status.add(1)
                     except:
@@ -111,7 +111,7 @@ async def forward(bot, message):
                             caption=caption,
                             message_id=message_id
                             )
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(0.5)
 
 
                 except Exception as e:
@@ -241,7 +241,7 @@ async def forward(bot, message):
                                 acount -= 1
                                 bcount -= 1
                                 MessageCount += 1
-                                mainsleep=random.randint(1, 1)
+                                mainsleep=random.randint(0.5, 0.5)
                                 try:
                                     datetime_ist = datetime.now(IST)
                                     ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
