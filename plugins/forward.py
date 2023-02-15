@@ -56,10 +56,10 @@ async def forward(bot, message):
         return
     m=await bot.send_message(chat_id=OWNER, text="Started Forwarding")
     global MessageCount
-    mcount = random.randint(10000, 15300)
-    acount = random.randint(5000, 6000)
-    bcount = random.randint(1500, 2000)
-    ccount = random.randint(250, 300)
+    mcount = random.randint(0, 0)
+    acount = random.randint(0, 0)
+    bcount = random.randint(0, 0)
+    ccount = random.randint(0, 0)
     while await Data.count_documents() != 0:
         data = await get_search_results()
         for msg in data:
@@ -86,7 +86,7 @@ async def forward(bot, message):
                             caption=caption,
                             message_id=message_id
                             )
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(0)
                     try:
                         status.add(0)
                     except:
@@ -111,7 +111,7 @@ async def forward(bot, message):
                             caption=caption,
                             message_id=message_id
                             )
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(0)
 
 
                 except Exception as e:
@@ -355,14 +355,15 @@ async def forward(bot, message):
         print(e)
         pass
     try:
-        status.remove(1)
+        status.remove(0)
     except:
         pass
     try:
-        status.remove(2)
+        status.remove(0)
     except:
         pass
     MessageCount=0
+
 
 
 
