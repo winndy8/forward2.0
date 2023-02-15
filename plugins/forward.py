@@ -92,7 +92,7 @@ async def forward(bot, message):
                     except:
                         pass
                     try:
-                        status.remove(2)
+                        status.remove(1)
                     except:
                         pass
                 except FloodWait as e:
@@ -241,7 +241,7 @@ async def forward(bot, message):
                                 acount -= 1
                                 bcount -= 1
                                 MessageCount += 1
-                                mainsleep=random.randint(3, 8)
+                                mainsleep=random.randint(1, 1)
                                 try:
                                     datetime_ist = datetime.now(IST)
                                     ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
@@ -257,7 +257,7 @@ async def forward(bot, message):
                                 await asyncio.sleep(mainsleep)
                             else:
                                 try:
-                                    status.add(2)
+                                    status.add(1)
                                 except:
                                     pass
                                 try:
@@ -276,11 +276,11 @@ async def forward(bot, message):
                                     
                                 await asyncio.sleep(csleep)
                                 ccount = random.randint(250, 300)
-                                print(f"Starting after {csleep/60} minutes")
+                                print(f"Starting after {csleep/1} minutes")
                                 await m.edit(f"Starting after {csleep}")
                         else:
                             try:
-                                status.add(2)
+                                status.add(1)
                             except:
                                 pass
                             try:
@@ -303,7 +303,7 @@ async def forward(bot, message):
                             await m.edit(f"Starting after {bsl}")
                     else:
                         try:
-                            status.add(2)
+                            status.add(1)
                         except:
                             pass
                         try:
@@ -325,7 +325,7 @@ async def forward(bot, message):
                         await m.edit(f"Starting after {asl}")
                 else:
                     try:
-                        status.add(2)
+                        status.add(1)
                     except:
                         pass
                     try:
