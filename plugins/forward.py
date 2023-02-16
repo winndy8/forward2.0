@@ -56,10 +56,10 @@ async def forward(bot, message):
         return
     m=await bot.send_message(chat_id=OWNER, text="Started Forwarding")
     global MessageCount
-    mcount = random.randint(1000, 1500)
-    acount = random.randint(5000, 6000)
-    bcount = random.randint(15000, 20000)
-    ccount = random.randint(25000, 30000)
+    mcount = random.randint(500, 600)
+    acount = random.randint(1000, 1200)
+    bcount = random.randint(1500, 1600)
+    ccount = random.randint(2000, 2200)
     while await Data.count_documents() != 0:
         data = await get_search_results()
         for msg in data:
