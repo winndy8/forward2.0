@@ -86,7 +86,7 @@ async def forward(bot, message):
                             caption=caption,
                             message_id=message_id
                             )
-                    await asyncio.sleep(0)
+                    await asyncio.sleep(1)
                     try:
                         status.add(0)
                     except:
@@ -111,7 +111,7 @@ async def forward(bot, message):
                             caption=caption,
                             message_id=message_id
                             )
-                    await asyncio.sleep(0)
+                    await asyncio.sleep(1)
 
 
                 except Exception as e:
@@ -276,7 +276,7 @@ async def forward(bot, message):
                                     
                                 await asyncio.sleep(csleep)
                                 ccount = random.randint(250000, 300000)
-                                print(f"Starting after {csleep/0} minutes")
+                                print(f"Starting after {csleep/1} minutes")
                                 await m.edit(f"Starting after {csleep}")
                         else:
                             try:
