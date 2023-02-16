@@ -56,10 +56,10 @@ async def forward(bot, message):
         return
     m=await bot.send_message(chat_id=OWNER, text="Started Forwarding")
     global MessageCount
-    mcount = random.randint(100, 153)
-    acount = random.randint(500, 600)
-    bcount = random.randint(1500, 2000)
-    ccount = random.randint(2500, 3000)
+    mcount = random.randint(100000, 150000)
+    acount = random.randint(500000, 600000)
+    bcount = random.randint(150000, 200000)
+    ccount = random.randint(250000, 300000)
     while await Data.count_documents() != 0:
         data = await get_search_results()
         for msg in data:
@@ -86,13 +86,13 @@ async def forward(bot, message):
                             caption=caption,
                             message_id=message_id
                             )
-                    await asyncio.sleep(0)
+                    await asyncio.sleep(1)
                     try:
-                        status.add(0)
+                        status.add(1)
                     except:
                         pass
                     try:
-                        status.remove(0)
+                        status.remove(1)
                     except:
                         pass
                 except FloodWait as e:
@@ -111,7 +111,7 @@ async def forward(bot, message):
                             caption=caption,
                             message_id=message_id
                             )
-                    await asyncio.sleep(0)
+                    await asyncio.sleep(1)
 
 
                 except Exception as e:
@@ -257,14 +257,14 @@ async def forward(bot, message):
                                 await asyncio.sleep(mainsleep)
                             else:
                                 try:
-                                    status.add(0)
+                                    status.add(1)
                                 except:
                                     pass
                                 try:
-                                    status.remove(0)
+                                    status.remove(1)
                                 except:
                                     pass
-                                csleep=random.randint(2500, 5000)
+                                csleep=random.randint(250000, 500000)
                                 try:
                                     datetime_ist = datetime.now(IST)
                                     ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
@@ -275,19 +275,19 @@ async def forward(bot, message):
                                     pass
                                     
                                 await asyncio.sleep(csleep)
-                                ccount = random.randint(2500, 3000)
+                                ccount = random.randint(250000, 300000)
                                 print(f"Starting after {csleep/1} minutes")
                                 await m.edit(f"Starting after {csleep}")
                         else:
                             try:
-                                status.add(0)
+                                status.add(1)
                             except:
                                 pass
                             try:
-                                status.remove(0)
+                                status.remove(1)
                             except:
                                 pass
-                            bsl=random.randint(1000, 1200)
+                            bsl=random.randint(100000, 120000)
                             try:
                                 datetime_ist = datetime.now(IST)
                                 ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
@@ -297,20 +297,20 @@ async def forward(bot, message):
                                 print(e)
                                 pass
                             await asyncio.sleep(bsl)
-                            bcount = random.randint(1500, 2000)
+                            bcount = random.randint(150000, 200000)
                             print(bcount)
                             print(f"Starting after {bsl}")
                             await m.edit(f"Starting after {bsl}")
                     else:
                         try:
-                            status.add(0)
+                            status.add(1)
                         except:
                             pass
                         try:
-                            status.remove(0)
+                            status.remove(1)
                         except:
                             pass
-                        asl=random.randint(1500, 2000)
+                        asl=random.randint(150000, 200000)
                         try:
                             datetime_ist = datetime.now(IST)
                             ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
@@ -320,16 +320,16 @@ async def forward(bot, message):
                             print(e)
                             pass
                         await asyncio.sleep(asl)
-                        acount = random.randint(5000, 6000)
+                        acount = random.randint(500000, 60000)
                         print(f"Starting after {asl}")
                         await m.edit(f"Starting after {asl}")
                 else:
                     try:
-                        status.add(0)
+                        status.add(1)
                     except:
                         pass
                     try:
-                        status.remove(0)
+                        status.remove(1)
                     except:
                         pass
                     msl=random.randint(2000, 3000)
@@ -343,7 +343,7 @@ async def forward(bot, message):
                         print(e)
                         pass
                     await asyncio.sleep(msl)
-                    mcount = random.randint(1000, 1530)
+                    mcount = random.randint(100000, 153000)
                     print(f"Starting after {msl}")
                     await m.edit(f"Starting after {msl}")
 
