@@ -86,7 +86,7 @@ async def forward(bot, message):
                             caption=caption,
                             message_id=message_id
                             )
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(0)
                     try:
                         status.add(0)
                     except:
@@ -111,7 +111,7 @@ async def forward(bot, message):
                             caption=caption,
                             message_id=message_id
                             )
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(0)
 
 
                 except Exception as e:
@@ -228,11 +228,11 @@ async def forward(bot, message):
                                     'file_type': file_type
                                     })
                                 try:
-                                    status.add(1)
+                                    status.add(0)
                                 except:
                                     pass
                                 try:
-                                    status.remove(2)
+                                    status.remove(1)
                                 except:
                                     pass
                                 
