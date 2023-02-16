@@ -228,7 +228,7 @@ async def forward(bot, message):
                                     'file_type': file_type
                                     })
                                 try:
-                                    status.add(0)
+                                    status.add(1)
                                 except:
                                     pass
                                 try:
@@ -241,7 +241,7 @@ async def forward(bot, message):
                                 acount -= 1
                                 bcount -= 1
                                 MessageCount += 1
-                                mainsleep=random.randint(0, 0)
+                                mainsleep=random.randint(1, 1)
                                 try:
                                     datetime_ist = datetime.now(IST)
                                     ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
